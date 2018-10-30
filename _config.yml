@@ -16,7 +16,7 @@
 title: Across the Universe.
 email: darren.nam@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is my first Jekyll Site in github. It's my playground.
+  My playground.
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
