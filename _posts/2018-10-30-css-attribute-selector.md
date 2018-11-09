@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "CSS Attribute Selector"
-date:   2018-10-30 10:07:44 +0900
-categories: css selector
+date:   2018-10-30
+categories: css selector attrigute
 ---
 
 `div[title]` - title 속성을 가진 div
