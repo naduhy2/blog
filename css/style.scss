@@ -16,6 +16,14 @@ body {
     -webkit-text-size-adjust: none;
 }
 
+a {
+    color: #000;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .wrapper {
     .coverimage {
         position: relative;
@@ -32,12 +40,6 @@ body {
         margin: 0 auto;
         background-color: #fff;
         text-align: center;
-        a {
-            text-decoration: none;
-            &:hover {
-                text-decoration: underline;
-            }
-        }
     }
     .content {
         position: relative;
