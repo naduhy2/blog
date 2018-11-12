@@ -2,7 +2,8 @@
 layout: post
 title:  "CSS Attribute Selector"
 date:   2018-10-30
-categories: css selector attrigute
+categories: css selector attribute
+
 ---
 
 `div[title]` - title 속성을 가진 div
