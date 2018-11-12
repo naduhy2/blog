@@ -1,10 +1,13 @@
 ---
 layout: post
-title:  "CSS Attribute Selector"
+title:  "CSS 속성 선택자"
 date:   2018-10-30
-categories: css selector attribute
+categories: selector attribute css
 
 ---
+스타일을 지정하기 위한 다양한 선택자들이 있다.
+태그, class, id를 선택하는 일반적인 방법이외에 요소의 스타일을 선택할 수 있는 방법들도 있다.
+요소에 지정된 속성들을 선택하는 방법이 대표적인데, 태그와 조합하면 다양한 형태의 선택자를 사용할 수 있다.
 
 `div[title]` - title 속성을 가진 div
 
