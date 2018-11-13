@@ -18,10 +18,16 @@ email: darren.nam@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is my playground. And This is some extra description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://naduhy2.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 timezone: Asia/Seoul
 github_username:  naduhy2
 google_analytics: UA-129096911-1
+
+# About
+author:
+  name: DeokHyeon Nam
+  email: darren.nam@gmail.com
+  github: naduhy2
 
 # Build settings
 permalink: /:year/:month/:title:output_ext
