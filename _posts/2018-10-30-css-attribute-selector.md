@@ -31,7 +31,7 @@ categories: selector attribute css
 
 
 
-#### 링크별로 다른 스타일 지정
+### 링크별로 다른 스타일 지정
 
 ```css
 a[href^="http"]{
@@ -51,7 +51,7 @@ a[href^="https://"]:after {
 
 
 
-#### 첨부파일이나 다운로드 받아야 할 파일의 링크에 적용.
+### 첨부파일이나 다운로드 받아야 할 파일의 링크에 적용.
 
 download 속성은 다운로드 받을 수 있게 해줌
 
@@ -63,7 +63,7 @@ a[download]:after {
 
 
 
-#### 파일의 확장자 별로 다른 아이콘 지정
+### 파일의 확장자 별로 다른 아이콘 지정
 
 ```css
 a[href$="pdf"]:after {
@@ -79,7 +79,7 @@ a[href$="odf"]:after {
 
 
 
-#### 다운로드 받을 수 있는 pdf 파일에 지정된 아이콘
+### 다운로드 받을 수 있는 pdf 파일에 지정된 아이콘
 
 ```css
 a[download][href$="pdf"]:after {
