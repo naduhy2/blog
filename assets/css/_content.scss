@@ -9,13 +9,20 @@
             font-size: 28px;
             margin-bottom: 10px;
         }
-        .date {
-            color: #e2e2e2;
-            font-size: 14px;
-        }
         p {
             color: #9c9c9c;
             font-size: 14px;
+        }
+        .post_extra {
+            display: flex;
+            .category {
+                padding-right: 10px;
+                color: #999;
+            }
+            .date {
+                color: #e2e2e2;
+                font-size: 14px;
+            }
         }
     }
 }

@@ -7,9 +7,11 @@ layout: "wrapper"
         <h2>
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             <span>{{ category }}</span>
-            <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
         </h2>
+        <div class="post_extra">
+            <span class="category">{{ post.categories | first }}</span>
+            <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
+        </div>
         <p>{{ post.excerpt }}</p>
     </article>
 {% endfor %}
-
