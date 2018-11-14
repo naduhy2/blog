@@ -1,16 +1,16 @@
 <header class="header">
-    <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
+    <h1><a href="{{ index.html | prepend: site.baseurl }}">{{ site.title }}</a></h1>
     <p>{{ site.description }}</p>
     <nav>
-        <a href="{{ site.url }}">
+        <a href="{{ index.html | prepend: site.baseurl }}">
             <i class="fa fa-home"></i>
             Home
         </a>
-        <a href="/about/">
+        <a href=" about.html">
             <i class="fa fa-user"></i>
             About
         </a>
-        <a href="/category/">
+        <a href="category.html">
             <i class="fa fa-folder-open"></i>
             Categories
         </a>
