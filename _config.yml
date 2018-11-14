@@ -18,6 +18,7 @@ author:
 permalink: /:year/:month/:title:output_ext
 markdown: kramdown
 highlighter: rouge
+comments: true
 plugins:
   - jekyll-feed
 collections:
