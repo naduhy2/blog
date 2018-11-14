@@ -1,0 +1,21 @@
+.content {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 16px;
+    article {
+        border-bottom: 1px solid #f2f2f0;
+        h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .date {
+            color: #e2e2e2;
+            font-size: 14px;
+        }
+        p {
+            color: #9c9c9c;
+            font-size: 14px;
+        }
+    }
+}

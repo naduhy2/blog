@@ -1,11 +1,10 @@
 
 title: Across the Universe.
-description: >- # this means to ignore newlines until "baseurl:"
-  This is my playground.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "http://naduhy2.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+description: This is my playground.
+baseurl: "/blog"
+url: "http://naduhy2.github.io"
+
 timezone: Asia/Seoul
-github_username:  naduhy2
 google_analytics: UA-129096911-1
 
 # About
@@ -14,10 +13,18 @@ author:
   email: darren.nam@gmail.com
   github: naduhy2
 
+sass:
+  sass_dir: assets/css/
+  style: :compressed
+
 # Build settings
 permalink: /:year/:month/:title:output_ext
 markdown: kramdown
-highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 comments: true
 plugins:
   - jekyll-feed
