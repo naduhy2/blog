@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 카뮈 이방인
+title: 이방인 - 알베르 카뮈
 date: 2018-11-15
 categories: Book
 tags: Camus

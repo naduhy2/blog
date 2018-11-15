@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자발적 복종
+title: 자발적 복종 - 에티엔 드 라보시에
 categories: Book
 tags:
 ---
