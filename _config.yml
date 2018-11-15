@@ -22,8 +22,12 @@ permalink: /:year/:month/:title:output_ext
 markdown: kramdown
 highlighter: rouge
 comments: true
+paginate: 5
+paginate_path: "paging/page:num"
+
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 collections:
   category:
     output: true
