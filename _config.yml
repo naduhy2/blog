@@ -20,11 +20,7 @@ sass:
 # Build settings
 permalink: /:year/:month/:title:output_ext
 markdown: kramdown
-
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-
+highlighter: rouge
 comments: true
 plugins:
   - jekyll-feed

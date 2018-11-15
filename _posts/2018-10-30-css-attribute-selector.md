@@ -2,7 +2,8 @@
 layout: post
 title:  "CSS 속성 선택자"
 date:   2018-10-30
-categories: selector attribute css
+categories: CSS
+tag: selector attribute
 ---
 
 스타일을 지정하기 위한 다양한 선택자들이 있다.

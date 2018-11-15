@@ -2,7 +2,8 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2018-11-11
-categories: jekyll update
+categories: temp
+tag: jekyll update
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
@@ -17,6 +18,22 @@ end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
+
+```
+.post_extra {
+    display: flex;
+    font-size: 14px;
+    .category {
+        padding-right: 10px;
+        color: #6ed3f3;
+    }
+    .date {
+        color: #e2e2e2;
+    }
+}
+```
+
+
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
