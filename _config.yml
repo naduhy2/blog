@@ -20,14 +20,14 @@ sass:
 # Build settings
 permalink: /:year/:month/:title:output_ext
 markdown: kramdown
-highlighter: rouge
-comments: true
-paginate: 5
-paginate_path: "paging/page:num"
 
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+comments: true
 plugins:
   - jekyll-feed
-  - jekyll-paginate
 collections:
   category:
     output: true
