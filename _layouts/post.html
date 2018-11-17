@@ -6,13 +6,16 @@ comments: true
 
 <h2>{{ page.title }}</h2>
 
+
 <div class="post_extra">
     <a class="category" href="{{ page.categories | first }}"><i class="fa fa-folder-open"></i> {{ page.categories | first }}</a>
     <a class="tag" href="{{ page.tags | first }}"><i class="fa fa-tag"></i> {{ page.tags | first }}</a>
     <span class="date">{{ page.date | date: "%B %d, %Y" }}</span>
 </div>
 
+
 {{ content }}
+
 {% include comments.html %}
 <script id="dsq-count-scr" src="//naduhy2.disqus.com/count.js" async></script>
 <!-- <hr>

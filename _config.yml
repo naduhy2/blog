@@ -28,6 +28,7 @@ kramdown:
 comments: true
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 collections:
   category:
     output: true
