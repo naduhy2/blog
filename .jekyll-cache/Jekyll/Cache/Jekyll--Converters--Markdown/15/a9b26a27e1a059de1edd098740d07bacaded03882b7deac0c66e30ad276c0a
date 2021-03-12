@@ -1,0 +1,71 @@
+I"�<p>스타일을 지정하기 위한 다양한 선택자들이 있다.
+태그, class, id를 선택하는 일반적인 방법이외에 요소의 스타일을 선택할 수 있는 방법들도 있다.
+요소에 지정된 속성들을 선택하는 방법이 대표적인데, 태그와 조합하면 다양한 형태의 선택자를 사용할 수 있다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">div[title]</code> - title 속성을 가진 div</p>
+
+<p><code class="language-plaintext highlighter-rouge">div [title]</code> - div 하위에 있는 [title] 속성을 가진 요소</p>
+
+<p><code class="language-plaintext highlighter-rouge">div[title="dna"]</code> - dna 타이틀을 가진 div</p>
+
+<p><code class="language-plaintext highlighter-rouge">div[title~="dna"]</code> - 여러 공백으로 구분된 리스트 중에 dna를 타이틀로 가진 div</p>
+
+<p><code class="language-plaintext highlighter-rouge">[title$="dna"]</code> - 타이틀의 뒤에 dna라는 단어를 포함하고 있는 모든 요소</p>
+
+<p><code class="language-plaintext highlighter-rouge">[title^="dna"]</code> - 타이틀의 앞에 dna라는 단어를 포함하고 있는 모든 요소</p>
+
+<p><code class="language-plaintext highlighter-rouge">[title|="gene"]</code> - “genealogy”는 선택하지 않고 “gene”나 “gene-data”를 선택하고 싶을 때. 하이픈은 포함된다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">[title*="dna"]</code> - dna라는 단어를 포함하고 있는 모든 타이틀</p>
+
+<p><code class="language-plaintext highlighter-rouge">a[title][class$="genes"]</code> - 클래스 이름이 “genes”로 끝나는 클래스를 가지고 있고, 타이틀 속성을 가지고 있는 a 태그</p>
+
+<p><code class="language-plaintext highlighter-rouge">[title*="DNA" i]</code> - 대소문자 상관없이 dna라는 타이틀을 가진 요소. i는 크롬 사파리 파폭 및 모바일 브라우저에서만 인식</p>
+
+<h3 id="링크별로-다른-스타일-지정">링크별로 다른 스타일 지정</h3>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">^=</span><span class="s1">"http"</span><span class="o">]</span><span class="p">{</span>
+   <span class="nl">color</span><span class="p">:</span> <span class="no">bisque</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="nd">:not</span><span class="o">([</span><span class="nt">href</span><span class="o">^=</span><span class="s1">"http"</span><span class="o">])</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">darksalmon</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">^=</span><span class="s1">"http://"</span><span class="o">]</span><span class="nd">:after</span> <span class="p">{</span>
+   <span class="nl">content</span><span class="p">:</span> <span class="sx">url(unlock-icon.svg)</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">^=</span><span class="s1">"https://"</span><span class="o">]</span><span class="nd">:after</span> <span class="p">{</span>
+   <span class="nl">content</span><span class="p">:</span> <span class="sx">url(lock-icon.svg)</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="첨부파일이나-다운로드-받아야-할-파일의-링크에-적용">첨부파일이나 다운로드 받아야 할 파일의 링크에 적용.</h3>
+
+<p>download 속성은 다운로드 받을 수 있게 해줌</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span><span class="o">[</span><span class="nt">download</span><span class="o">]</span><span class="nd">:after</span> <span class="p">{</span>
+   <span class="nl">content</span><span class="p">:</span> <span class="sx">url(download-arrow.svg)</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="파일의-확장자-별로-다른-아이콘-지정">파일의 확장자 별로 다른 아이콘 지정</h3>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="err">$</span><span class="o">=</span><span class="s1">"pdf"</span><span class="o">]</span><span class="nd">:after</span> <span class="p">{</span>
+   <span class="nl">content</span><span class="p">:</span> <span class="sx">url(pdf-icon.svg)</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="err">$</span><span class="o">=</span><span class="s1">"docx"</span><span class="o">]</span><span class="nd">:after</span> <span class="p">{</span>
+   <span class="nl">content</span><span class="p">:</span> <span class="sx">url(docx-icon.svg)</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="err">$</span><span class="o">=</span><span class="s1">"odf"</span><span class="o">]</span><span class="nd">:after</span> <span class="p">{</span>
+   <span class="nl">content</span><span class="p">:</span> <span class="sx">url(open-office-icon.svg)</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="다운로드-받을-수-있는-pdf-파일에-지정된-아이콘">다운로드 받을 수 있는 pdf 파일에 지정된 아이콘</h3>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span><span class="o">[</span><span class="nt">download</span><span class="o">][</span><span class="nt">href</span><span class="err">$</span><span class="o">=</span><span class="s1">"pdf"</span><span class="o">]</span><span class="nd">:after</span> <span class="p">{</span>
+   <span class="nl">content</span><span class="p">:</span> <span class="sx">url(pdf-icon.svg)</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+:ET
