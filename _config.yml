@@ -1,4 +1,3 @@
-
 title: Across the Universe.
 description: This is my playground.
 baseurl: "/blog"
@@ -9,41 +8,41 @@ google_analytics: UA-129096911-1
 
 # About
 author:
-  name: DeokHyeon Nam
-  email: darren.nam@gmail.com
-  github: naduhy2
+    name: DeokHyeon Nam
+    email: darren.nam@gmail.com
+    github: naduhy2
 
 sass:
-  sass_dir: assets/css/
-  style: :compressed
+    sass_dir: assets/css/
+    style: :compressed
 
 # Build settings
 permalink: /:year/:month/:title:output_ext
 markdown: kramdown
 
 kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+    input: GFM
+    syntax_highlighter: rouge
 
 comments: true
 plugins:
-  - jekyll-feed
-  - jekyll-paginate
+    - jekyll-feed
+    - jekyll-paginate
 collections:
-  category:
-    output: true
-    permalink: /category/:path/
+    category:
+        output: true
+        permalink: /category/:path/
 
 defaults:
-  - scope:
-      path: "assets/img"
-    values:
-      image: true
-  - scope:
-      path: ''
-      type: category
-    values:
-      layout: category
+    - scope:
+          path: "assets/img"
+      values:
+          image: true
+    - scope:
+          path: ""
+          type: category
+      values:
+          layout: category
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
